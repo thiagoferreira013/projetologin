@@ -60,11 +60,9 @@ body{
 }
 
 #login > .formulario > form .campo{
-    padding: 8px;
+    height: 40px;
     background-color: var(--roxo);
-    border-radius: 10px;
-    width: 92%;
-    margin-left: 20px;
+    border-radius: 5px;
     margin-top: 5px;
 }
 
