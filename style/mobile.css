@@ -28,12 +28,13 @@ body{
     position: absolute;
     border-radius: 20px;
     width: 255px;
-    height: 500px;
+    height: 550px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width 0.3s, height 0.3s;
 }
 
 #login > .imagem{
@@ -59,14 +60,82 @@ body{
     font-size: 0.8em;
 }
 
-#login > .formulario > form .campo{
-    height: 40px;
+#login > .formulario > form{
+    padding: 5px;
+    display: inline-block;
+}
+
+#login > .formulario > form > .campo{
+    height: 45px;
     background-color: var(--roxo);
-    border-radius: 5px;
+    border-radius: 8px;
     margin-top: 5px;
+    padding-left: 5px;
+    width: 240px;
 }
 
 #login > .formulario > form > .campo > label > span{
-    background-color: black;
+    position: relative;
+    font-size: 2em;
     color: white;
+    top: 5px;
+}
+
+#login > .formulario > form > .campo > input[type=email]{
+    height: 90%;
+    width: 83%;
+    border-radius: 10px;
+    border: none;
+    background-color: #71d7df;
+    font-size: 1em;
+    transform: translateY(-5px);
+}
+
+#login > .formulario > form > .campo > input[type=password]{
+    height: 90%;
+    width: 83%;
+    border-radius: 10px;
+    border: none;
+    background-color: #71d7df;
+    font-size: 1em;
+    transform: translateY(-5px);
+}
+
+#login > .formulario > form > input[type=submit]{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    background-color: #57abb1;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#login > .formulario > form > input[type=submit]:hover{
+    background-color: var(--verde);
+}
+
+#login > .formulario > form > a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid var(--verde);
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
+    color: #346468;
+}
+
+#login > .formulario > form > a > span{
+    position: relative;
+    top: 5px;
+    color: #346468;
+}
+
+#login > .formulario > form > a:hover{
+    background-color: #71d7df;
 }
